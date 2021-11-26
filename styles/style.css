@@ -9,17 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-
 .header {
   height: 100vh;
   min-height: 600px;
@@ -38,13 +27,15 @@ li {
 .logo_place_header {
   position: absolute;
   top: 30px;
+  left: 64px;
   width: 183px;
   height: 32px;
 }
 
 .header__title {
   align-self: center;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
+  padding: 0;
   width: 730px;
   line-height: 96px;
   font-size: 102px;
@@ -55,7 +46,10 @@ li {
 .header__subtitle {
   position: absolute;
   width: 388px;
+  left: 64px;
   bottom: 30px;
+  margin: 0;
+  padding: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -65,12 +59,6 @@ li {
 .header__link {
   color: #2f80ed;
   text-decoration: none;
-}
-
-
-.logo_place_header_left,
-.header__subtitle_left {
-  left: 64px;
 }
 
 .header__main-illustration {
@@ -98,7 +86,6 @@ li {
 }
 
 .two-columns {
-  position: relative;
   display: flex;
   width: 80%;
   margin: auto;
@@ -118,35 +105,40 @@ li {
   min-width: 784px;
 }
 
-.main-text__paragraph:nth-of-type(1n) {
+.two-columns__paragraph:nth-of-type(1n) {
   margin-bottom: 30px;
 }
 
-.main-text__paragraph:last-of-type {
+.two-columns__paragraph:last-of-type {
   margin-bottom: 0;
 }
 
 .brief__title {
+  margin: 0;
+  padding: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
 }
 
-.main-text__paragraph {
+.two-columns__paragraph {
+  margin: 0;
+  padding: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 
-.main-text__paragraph-title {
+.two-columns__span-accent {
+  margin: 0;
+  padding: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
 }
 
 .digits {
-  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
@@ -154,6 +146,8 @@ li {
 
 .section-title {
   width: 60%;
+  margin: 0 auto 20px;
+  padding: 0;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
@@ -164,6 +158,8 @@ li {
 .section-subtitle {
   width: 60%;
   text-align: center;
+  margin: 0 auto;
+  padding: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -176,48 +172,36 @@ li {
   flex-wrap: wrap;
   justify-content: space-between;
   z-index: 1;
-}
-
-.section-title_horizontal-shift,
-.table_horizontal-shift,
-.section-subtitle_horizontal-shift {
   margin: 0 auto;
-}
-
-.section-title_vertical-shift {
-  margin-bottom: 20px;
 }
 
 .table__cell {
   display: flex;
   flex-direction: column;
+  margin-top: 60px;
   width: 250px;
 }
 
-.table__cell_top {
-  margin-top: 60px;
-}
-
-.table__cell-heading {
+.table__heading {
+  margin: 0;
+  padding: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
 
-.table__cell-text {
+.table__text {
+  margin: 20px 0 0;
+  padding: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
 
-.table__cell-text_top {
-  margin-top: 20px;
-}
-
 .feynman {
   position: relative;
   display: flex;
-  height: 890px;
+  min-height: 890px;
   flex-direction: column;
   background-color: #f2f2f2;
 }
@@ -225,6 +209,7 @@ li {
 .feynman__title {
   width: 648px;
   margin: 100px 0 70px;
+  padding: 0;
   text-align: center;
   align-self: center;
   line-height: 1.15;
@@ -235,6 +220,8 @@ li {
 
 .feynman__subtitle {
   align-self: center;
+  margin: 0;
+  padding: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -288,10 +275,12 @@ li {
 
 .kaufman-triangle {
   position: absolute;
-  width: 877px;
-  height: 877px;
   top: 0;
   right: -210px;
+  width: 877px;
+  height: 877px;
+  background-image: url(images/kaufman-triangle.svg);
+  background-size: contain;
   z-index: 0;
 }
 
@@ -313,7 +302,7 @@ li {
   padding: 0;
 }
 
-.footer__column_copyright {
+.footer__column_content-copyright {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -327,6 +316,7 @@ li {
 
 .footer__author {
   margin: 18px 0;
+  padding: 0;
   color: white;
   line-height: 25px;
   font-size: 18px;
@@ -342,6 +332,7 @@ li {
 
 .footer__column-heading {
   margin: 0;
+  padding: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
@@ -352,6 +343,8 @@ li {
   display: flex;
   flex-direction: column;
   margin: 20px 0 16px;
+  padding: 0;
+  list-style: none;
 }
 
 .footer__column-link {
