@@ -1,0 +1,8 @@
+.link_slightly-pale {
+  opacity: 1;
+  transition: opacity .4s ease-in-out;
+}
+
+.link_slightly-pale:hover {
+  opacity: .5;
+}
