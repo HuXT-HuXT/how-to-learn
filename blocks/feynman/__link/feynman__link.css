@@ -8,4 +8,11 @@
   font-weight: normal;
   text-decoration: none;
   z-index: 1;
+  opacity: 1;
+  transition: opacity .4s ease-in-out;
 }
+
+.feynman__link:hover {
+  opacity: .5;
+}
+
