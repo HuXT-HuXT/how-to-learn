@@ -35,7 +35,7 @@
 
 @import url(../blocks/video/video.css);
 @import url(../blocks/video/__iframes/video__iframes.css);
-@import url(../blocks/video/__iframes/_yt-clip/video__iframes_ytclip.css);
+@import url(../blocks/video/__ytclip/video__ytclip.css);
 
 @import url(../blocks/oakley/oakley.css);
 
