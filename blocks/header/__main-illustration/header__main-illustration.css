@@ -2,8 +2,8 @@
   position: absolute;
   width: 765px;
   height: 608px;
-  object-fit: fill;
-  object-position: center;
+  object-fit: cover;
+  object-position: top;
   bottom: 0;
   right: 0;
   z-index: 1;
